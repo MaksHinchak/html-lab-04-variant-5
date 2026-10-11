@@ -1,0 +1,54 @@
+.catalog-note { color: var(--muted); font-size: 14px; }
+.table-scroll { max-width: 100%; overflow-x: auto; }
+.table-scroll:focus-visible { outline: 3px solid var(--aqua); outline-offset: 4px; }
+.table-caption { caption-side: top; padding: 8px 0; color: var(--blue-dark); }
+.variant-table {
+  min-width: 920px;
+  table-layout: fixed;
+  border: 1px solid #90afc1;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: white;
+  empty-cells: show;
+}
+.variant-table .number-column { width: 5%; }
+.variant-table .product-columns { width: 15%; }
+.variant-table .description-column { width: 27%; }
+.variant-table .terms-columns { width: 8%; }
+.variant-table .status-column { width: 6%; }
+.variant-table th, .variant-table td {
+  padding: 10px 8px;
+  border: 1px solid #90afc1;
+  vertical-align: middle;
+  overflow-wrap: break-word;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.table-head { text-align: center; vertical-align: middle; }
+.table-head th { text-align: center; }
+.variant-table thead tr:first-child th { background-color: var(--blue-dark); }
+.variant-table tbody th { text-align: center; color: var(--blue-dark); background: #e4f2f5; }
+.variant-table tbody tr:nth-child(even) { background: #f2f8fb; }
+.variant-table .group-start > * { border-top: 2px solid #90afc1; }
+.variant-table .status-cell { text-align: center; color: #176343; font-weight: 700; background: #eef9f1; }
+.numeric { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.variant-table tfoot { background: #e4f2f5; }
+.variant-table tfoot td { text-align: center; font-weight: 600; }
+.variant-table tfoot th { text-align: center; }
+.delivery-table { min-width: 540px; border-collapse: separate; border-spacing: 3px; empty-cells: show; }
+.delivery-table .delivery-details { background: #f2f8fb; }
+.delivery-table tbody th { color: var(--blue-dark); background: #e4f2f5; }
+.delivery-table tfoot td { color: var(--muted); font-size: 14px; }
+@media (max-width: 660px) {
+  .site-main { overflow-x: visible; }
+  .table-scroll { margin-bottom: 12px; }
+}
+@media print {
+  body { width: 100%; background: white; padding: 0; }
+  nav { display: none; }
+  .site-header, .site-main, .site-footer { padding: 12px; border-radius: 0; box-shadow: none; }
+  .table-scroll { overflow: visible; }
+  .variant-table, .delivery-table { min-width: 0; }
+  .variant-table th, .variant-table td { padding: 4px; font-size: 9px; }
+  tr { break-inside: avoid; }
+}
