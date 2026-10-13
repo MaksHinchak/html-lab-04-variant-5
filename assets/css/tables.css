@@ -11,11 +11,15 @@
   background-color: white;
   empty-cells: show;
 }
-.variant-table .number-column { width: 5%; }
-.variant-table .product-columns { width: 15%; }
-.variant-table .description-column { width: 27%; }
-.variant-table .terms-columns { width: 8%; }
-.variant-table .status-column { width: 6%; }
+.variant-table .number-column { width: 5.26%; }
+.variant-table .model-column { width: 17.24%; }
+.variant-table .interface-column { width: 17.65%; }
+.variant-table .description-column { width: 30.69%; }
+.variant-table .price-column { width: 6.12%; }
+.variant-table .stock-column { width: 6.53%; }
+.variant-table .warranty-column { width: 6.40%; }
+.variant-table .delivery-column { width: 5.25%; }
+.variant-table .status-column { width: 4.86%; }
 .variant-table th, .variant-table td {
   padding: 10px 8px;
   border: 1px solid #90afc1;
@@ -33,6 +37,7 @@
 .variant-table .status-cell { text-align: center; color: #176343; font-weight: 700; background: #eef9f1; }
 .numeric { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .variant-table tfoot { background: #e4f2f5; }
+.variant-table tfoot th, .variant-table tfoot td { padding-top: 20px; padding-bottom: 20px; }
 .variant-table tfoot td { text-align: center; font-weight: 600; }
 .variant-table tfoot th { text-align: center; }
 .delivery-table { min-width: 540px; border-collapse: separate; border-spacing: 3px; empty-cells: show; }
